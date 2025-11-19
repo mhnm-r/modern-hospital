@@ -1,0 +1,242 @@
+@font-face {
+  font-family: 'CustomFont';
+  src: url('/fonts/8ddf16529f784cc9-s.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'CustomFont';
+  src: url('/fonts/05eb95660d8d0463-s.p.woff2') format('woff2');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'CustomFont';
+  src: url('/fonts/8bb7918bb1258ff4-s.woff2') format('woff2');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'CustomFont';
+  src: url('/fonts/0664ebc30f72a650-s.p.otf') format('opentype');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'CustomFont';
+  src: url('/fonts/c09e778fd7021e40-s.p.otf') format('opentype');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  /* Font Family */
+  --font-family: 'CustomFont', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+  
+  /* Modern Color Palette */
+  /* --primary-color: #0048ff; */
+  --primary-color: #6800bd;
+  --primary-light: #6800bd;
+  
+  /* --primary-light: #00d9ff; */
+
+  --primary-dark: #2663EB;
+  --primary-yellow: #FEFBD4;
+
+
+  /* --secondary-color: #010e28; */
+  --secondary-color: #2663EB;
+  --secondary-dark: #2663EB;
+
+  /* --accent-color: #00d4ff; */
+  /* --accent-color: #00bbff; */
+  --text-color: #1a1a1a;
+  --text-dark: #020202;
+  --text-light: #5B6987;
+  --text-lighter: #999999;
+  --bg-light: #f8f9fa;
+  --bg-lighter: #fafbfc;
+  --white: #ffffff;
+  --border-color: #e5e5e5;
+  --border-light: #f0f0f0;
+  --shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+  --shadow-hover: 0 1px 1rem #6800bd5d;
+  --shadow-card: 0 2px 8px rgba(0, 0, 0, 0.06);
+  --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-family);
+  font-weight: 700;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: var(--text-color);
+  line-height: 1.6;
+  font-size: 16px;
+}
+
+/* Make all text elements bold */
+* {
+  font-weight: 700 !important;
+}
+
+/* Reset font-weight for specific elements that shouldn't be bold */
+img, svg, canvas, video, iframe {
+  font-weight: normal !important;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+  transition: var(--transition);
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  font-family: inherit;
+  transition: var(--transition);
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+.container {
+  max-width: 1320px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+.section {
+  padding: 2.5rem 0 !important;
+}
+
+.section-header {
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+.section-title {
+  font-size: 1.75rem;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 1rem;
+  color: var(--primary-dark);
+  letter-spacing: -0.02em;
+  line-height: 1.2;
+}
+
+.section-subtitle {
+  font-size: 1rem;
+  color: var(--text-light);
+  max-width: 700px;
+  margin: 0 auto;
+  line-height: 1.7;
+  font-weight: 700;
+}
+
+.section-footer {
+  text-align: center;
+  margin-top: 0rem;
+}
+
+.btn {
+  display: inline-block;
+  padding: 0.3rem 0.5rem;
+  background-color: var(--primary-color);
+  color: var(--white);
+  border-radius: 0.3rem;
+  font-weight: 700;
+  font-size: 0.9375rem;
+  transition: var(--transition);
+  border: 2px solid var(--primary-color);
+  text-align: center;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: var(--primary-dark);
+  border-color: var(--primary-dark);
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-hover);
+  color: var(--white);
+}
+
+.btn-secondary {
+  background-color: transparent;
+  border: 0.15rem solid var(--primary-color);
+  color: var(--primary-color);
+}
+
+.btn-secondary:hover {
+  background-color: var(--primary-color);
+  color: var(--white);
+  border-color: var(--primary-color);
+}
+
+@media (max-width: 1024px) {
+  .container {
+    max-width: 100%;
+    padding: 0 2rem;
+  }
+  
+  .section {
+    padding: 1.5rem 0;
+  }
+  
+  .section-title {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .section {
+    padding: 2rem 0;
+  }
+
+  .section-title {
+    font-size: 1.875rem;
+    margin-bottom: 0.75rem;
+  }
+  
+  .section-subtitle {
+    font-size: 1rem;
+  }
+  
+  .section-header {
+    margin-bottom: 1.5rem;
+  }
+
+  .container {
+    padding: 0 0.5rem;
+  }
+  
+  .btn {
+    padding: 12px 24px;
+    font-size: 0.9375rem;
+  }
+}
+

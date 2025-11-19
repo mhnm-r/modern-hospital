@@ -1,0 +1,57 @@
+.specialities-page {
+  min-height: 100vh;
+}
+
+.specialities-list {
+  background-color: var(--bg-light);
+}
+
+.specialities-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 0.5rem;
+}
+
+.speciality-card {
+  background-color: var(--white);
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: var(--shadow);
+  transition: all 0.3s ease;
+  border-left: 4px solid var(--primary-color);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.speciality-card:hover {
+  transform: translateY(-5px);
+  box-shadow: var(--shadow-hover);
+  border-left-color: var(--secondary-color);
+}
+
+.speciality-card h3 {
+  font-size: 1.2rem;
+  color: var(--text-color);
+  font-weight: 600;
+  line-height: 1.4;
+  flex: 1;
+}
+
+.card-arrow {
+  color: var(--primary-color);
+  font-size: 1.5rem;
+  margin-left: 15px;
+  transition: transform 0.3s ease;
+}
+
+.speciality-card:hover .card-arrow {
+  transform: translateX(5px);
+}
+
+@media (max-width: 768px) {
+  .specialities-grid {
+    grid-template-columns: 1fr;
+  }
+}
+

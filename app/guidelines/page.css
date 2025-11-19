@@ -1,0 +1,67 @@
+/* page.css - Styles for the guideline component, following global.css design patterns */
+
+/* Import global styles if needed (optional, depends on your setup) */
+/* @import '../../global.css'; */
+
+/* Container for the guidelines page */
+.guideline-container {
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 32px;
+  background: var(--color-bg, #fff);
+  border-radius: 16px;
+  box-shadow: 0 4px 24px rgba(0,0,0,0.08);
+  font-family: var(--font-family, 'Inter', sans-serif);
+}
+
+/* Heading styles */
+.guideline-title {
+  font-size: 2.25rem;
+  font-weight: 700;
+  color: var(--color-primary, #1a237e);
+  margin-bottom: 24px;
+  letter-spacing: -0.5px;
+}
+
+/* Section headings */
+.guideline-section-title {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: var(--color-secondary, #3949ab);
+  margin-top: 32px;
+  margin-bottom: 12px;
+}
+
+/* Paragraph styles */
+.guideline-text {
+  font-size: 1rem;
+  color: var(--color-text, #333);
+  line-height: 1.7;
+  margin-bottom: 18px;
+}
+
+/* List styles */
+.guideline-list {
+  padding-left: 24px;
+  margin-bottom: 18px;
+}
+
+.guideline-list li {
+  font-size: 1rem;
+  color: var(--color-text, #333);
+  margin-bottom: 8px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 600px) {
+  .guideline-container {
+    padding: 16px;
+    border-radius: 8px;
+  }
+  .guideline-title {
+    font-size: 1.5rem;
+  }
+  .guideline-section-title {
+    font-size: 1rem;
+  }
+}

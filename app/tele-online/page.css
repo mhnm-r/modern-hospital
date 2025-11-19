@@ -1,0 +1,96 @@
+.tele-online-page {
+  min-height: 100vh;
+}
+
+.tele-content {
+  background-color: var(--white);
+}
+
+.tele-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1.2fr;
+  gap: 60px;
+}
+
+.tele-info h2 {
+  font-size: 1.75rem;
+  margin-bottom: 20px;
+  color: var(--text-color);
+}
+
+.tele-info > p {
+  color: var(--text-light);
+  line-height: 1.8;
+  margin-bottom: 40px;
+  font-size: 1.05rem;
+}
+
+.features-list {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.feature-item h3 {
+  font-size: 1.2rem;
+  color: var(--primary-color);
+  margin-bottom: 8px;
+  font-weight: 600;
+}
+
+.feature-item p {
+  color: var(--text-light);
+  line-height: 1.6;
+}
+
+.tele-form-wrapper h2 {
+  font-size: 1.75rem;
+  margin-bottom: 30px;
+  color: var(--text-color);
+}
+
+.tele-form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group label {
+  margin-bottom: 8px;
+  color: var(--text-color);
+  font-weight: 500;
+}
+
+.form-group input,
+.form-group select {
+  padding: 12px 15px;
+  border: 2px solid var(--border-color);
+  border-radius: 5px;
+  font-family: inherit;
+  font-size: 1rem;
+  transition: border-color 0.3s ease;
+}
+
+.form-group input:focus,
+.form-group select:focus {
+  outline: none;
+  border-color: var(--primary-color);
+}
+
+.tele-form .btn {
+  align-self: flex-start;
+  padding: 12px 40px;
+}
+
+@media (max-width: 968px) {
+  .tele-wrapper {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+}
+

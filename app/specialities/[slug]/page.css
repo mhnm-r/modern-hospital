@@ -1,0 +1,78 @@
+.speciality-detail-page {
+  min-height: 100vh;
+}
+
+.speciality-content {
+  background-color: var(--white);
+}
+
+.content-wrapper {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 40px;
+}
+
+.main-content h2 {
+  font-size: 1.75rem;
+  margin-bottom: 20px;
+  color: var(--text-color);
+}
+
+.main-content p {
+  color: var(--text-light);
+  line-height: 1.8;
+  margin-bottom: 20px;
+  font-size: 1.05rem;
+}
+
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.sidebar-card {
+  background-color: var(--bg-light);
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: var(--shadow);
+}
+
+.sidebar-card h3 {
+  font-size: 1.3rem;
+  color: var(--primary-color);
+  margin-bottom: 20px;
+  font-weight: 600;
+}
+
+.sidebar-card ul {
+  list-style: none;
+}
+
+.sidebar-card ul li {
+  padding: 10px 0;
+  color: var(--text-light);
+  border-bottom: 1px solid var(--border-color);
+}
+
+.sidebar-card ul li:last-child {
+  border-bottom: none;
+}
+
+.sidebar-card p {
+  color: var(--text-light);
+  line-height: 1.6;
+  margin-bottom: 10px;
+}
+
+.sidebar-card strong {
+  color: var(--primary-color);
+  font-size: 1.2rem;
+}
+
+@media (max-width: 968px) {
+  .content-wrapper {
+    grid-template-columns: 1fr;
+  }
+}
+
